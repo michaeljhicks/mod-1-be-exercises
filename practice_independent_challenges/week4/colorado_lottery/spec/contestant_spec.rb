@@ -1,4 +1,6 @@
 require './lib/contestant'
+require './lib/colorado_lottery'
+require './lib/game'
 
 
  RSpec.describe Contestant do
@@ -32,8 +34,8 @@ require './lib/contestant'
     end
 
     it "can add_game_interests" do
-        @alexander.add_game_interests("Mega Millions")
-        @alexander.add_game_interests("Pick 4")
+        @alexander.add_game_interest("Mega Millions")
+        @alexander.add_game_interest("Pick 4")
         expect(@alexander.game_interests).to eq(["Mega Millions", "Pick 4"])      
     end
 

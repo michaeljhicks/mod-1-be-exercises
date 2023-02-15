@@ -22,7 +22,7 @@ class Contestant
     @out_of_state
   end
 
-  def add_game_interests(game)
+  def add_game_interest(game)
     @game_interests.push(game)
   end 
   
